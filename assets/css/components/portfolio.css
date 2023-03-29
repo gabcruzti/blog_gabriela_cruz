@@ -1,0 +1,44 @@
+.portfolio-summary__header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.portfolio-summary__content {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-summary__card {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 1.5rem;
+    background-color: var(--background-lighter);
+    border-radius: .5rem;
+}
+
+.portfolio-summary__card__first-child {
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+
+.portfolio-summary__card__second-child {
+    display: grid;
+    gap: .5rem;
+    
+}
+.portfolio-summary__card svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--background);
+    border-radius: .5rem;
+    padding:.5rem;
+}
+
+.badge {
+    background-color: var(--primary-lighter);
+    padding: .125rem .625rem;
+    border-radius: .625rem;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-md">
+            <nav class="navbar">
+                <a href="./index.html" class="navbar__logo heading-md semibold text-decoration-none">
+                    <span>Gabriela Cruz</span>
+                </a>
+                <ul class="navbar__links list-style-none">
+                    <li><a href="./article.html" class="link text-md semibold">Articles</a></li>
+                    <li><a href="./porfolio.html" class="link text-md semibold">Portafolio</a></li>
+                    <li><a href="./about.html" class="link text-md semibold">About</a></li>
+                    <li><a href="./contact.html" class="button button--primary button--sm text-decoration-none ml-4">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="section-padding-md">
+        <div class="container-lg">
+            <div>
+                <h1 class="heading-lg semibold contact">Contact Me</h1>
+                <p class="text-lg light contact"> Looking to expand your team? Or do you need a web developer for a
+                    specific project? If I can help you in any way don't hesitate to fill this form.</p>
+            </div>
+                        
+            <form action="/login" method="post" class="container-md section-padding-sm">
+                <fieldset class="fieldset checkbox-group--horizontal">
+                    <div>
+                        <label class="label text-xs light overline">first name </label>
+                        <input class="input" type="text" name="firstname" placeholder="John" id="firstname" />
+                    </div>
+                    <div>
+                        <label class="label text-xs light overline">last name </label>
+                        <input class="input" type="text" name="lastname" placeholder="Doe" id="lastname" />
+                    </div>
+                    <div>
+                        <label class="label text-xs light overline">email </label>
+                        <input class="input" type="email" name="email" placeholder="john@mail.com" id="email" />
+                    </div>
+                    <div>
+                        <label class="label text-xs light overline">company </label>
+                        <input class="input" type="text" name="company" placeholder="Company SA" id="company" />
+                    </div>
+                    <div>
+                        <label class="label text-xs light overline">phone</label>
+                        <input class="input" type="number" name="email" placeholder="987654321" id="phone" min="900000000"
+                            max="999999999" />
+                    </div>
+                    <div>
+                        <label class="label text-xs light overline">country </label> 
+                        <select class="select">
+                            <option selected disabled hidden>Select one option</option>
+                            <option value="1">Perú</option>
+                            <option value="2">México</option>
+                            <option value="3">Brasil</option>
+                            <option value="4">Estados Unidos</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="label text-xs light overline">how can i help you</label>
+                    <br />
+                    <div class="checkbox-group checkbox-group--vertical">
+                        <div class="checkbox">
+                            <input id="checkbox_1" name="checkbox_group_1" type="checkbox" class="checkbox__input" />
+                            <div>
+                                <label for="checkbox_1" class="text-sm light">Job Offer</label>
+                                <span class="checkbox__message">If you are looking to expand your team</span>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_2" name="checkbox_group_1" type="checkbox" class="checkbox__input" />
+                            <div>
+                                <label for="checkbox_2" class="text-sm light">Project Offer</label>
+                                <span class="checkbox__message">If you are looking to expand your team</span>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_3" name="checkbox_group_1" type="checkbox" class="checkbox__input" />
+                            <div>
+                                <label for="checkbox_3" class="text-sm light">Colaboration</label>
+                                <span class="checkbox__message">If you are looking to expand your team</span>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <input id="checkbox_4" name="checkbox_group_1" type="checkbox" class="checkbox__input" />
+                            <div>
+                                <label for="checkbox_4" class="text-sm light">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="container-md">
+                <button class="button button--primary button--lg w-full">
+                  Send
+                </button>
+              </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
